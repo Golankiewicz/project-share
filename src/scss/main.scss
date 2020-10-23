@@ -7,28 +7,73 @@ body {
 	font-family: $font-base;
 }
 
-
-.login{
-  float:right;
-  display:inline-block;
-  margin: 10px;
-}
-.menu ul{
-  float:right;
-  margin-top: 40px;
-}
-.menu li{
-  display: inline-block;
-  padding: 10px 20px;
-
+.login {
+	float: right;
+	width: 158px;
+	height: 36px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.home-header{
-  margin: 150px;
-  display:block;
-  height: 20vh;
-  width:100vw;
-  background-color: cyan;
+.login button {
+	font-size: 13px;
+	display: inline-block;
+	height: 19px;
+	font-family: $font-base;
+}
+
+.login button + button {
+	border: 0.75px solid #fad648;
+}
+.menu ul {
+	float: right;
+	margin-top: 53px;
+	height: 42px;
+	width: 683px;
+	//border: 1px solid red;
+}
+.menu li {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 18px;
+}
+.footer {
+	text-align: center;
+}
+
+.home {
+	width: 100%;
+}
+
+.home-header {
+	margin-left: 0;
+	/*background-color: cyan;*/
+}
+
+.hero-image {
+	height: 100vh;
+	width: 100%;
+	background: url(../assets/Home-Hero-Image.jpg) no-repeat -200px / auto 100%;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.right {
+	height: 100%;
+	width: 883px;
+	float: right;
+}
+.top-menu {
+	height: 95px;
+	width: 683px;
+}
+.intro {
+	width: 50%;
+	text-align: center;
+	font-size: 38px;
+	font-family: $font-base;
 }
 
 /*
@@ -76,4 +121,3 @@ body {
   }
 }
 */
-
