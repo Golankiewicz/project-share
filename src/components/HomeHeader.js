@@ -15,7 +15,7 @@ class HomeHeader extends Component {
                </div>
                <div class='hero-image'>
                <div class='intro'>
-                        <p>Zacznij pomagać <br/>Oddaj niechciane rzeczy w zaufane ręce</p>
+                        <p>Zacznij pomagać! <br/>Oddaj niechciane rzeczy w zaufane ręce</p>
                     </div>
                </div>
             </div>
