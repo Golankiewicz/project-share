@@ -105,3 +105,25 @@ body {
 	font-size: 24px;
 	display: inline-block;
 }
+
+.home-three-columns {
+	width: 100vw;
+	height: 30vh;
+	background-color: $orange;
+	display: flex;
+}
+
+.column {
+	padding: 30px;
+	width: 33.3%;
+	height: 100%;
+	text-align: center;
+}
+.column h4,
+p {
+	padding: 10px;
+}
+
+.display {
+	font-size: 38px;
+}
