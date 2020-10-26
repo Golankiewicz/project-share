@@ -3,7 +3,7 @@
 @import 'settings/colors';
 @import 'settings/reset';
 * {
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -67,8 +67,8 @@ body {
 	background: url(../assets/Home-Hero-Image.jpg) no-repeat center/cover;
 }
 .right {
-	height: 100%;
-	width: 50%;
+	display: flex;
+	flex-direction: column;
 }
 
 .top-menu {
@@ -80,7 +80,6 @@ body {
 	align-items: flex-end;
 }
 .intro {
-	padding: 250px 30px 30px 30px;
 	width: 100%;
 	text-align: center;
 	font-size: 24px;
@@ -89,6 +88,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	flex-grow: 1;
 }
 
 .decoration {
@@ -105,11 +105,12 @@ body {
 	font-size: 24px;
 	display: inline-block;
 	text-align: center;
+	margin: 50px 10px;
 }
 
 .home-three-columns {
-	width: 100vw;
-	height: 30vh;
+	width: 100%;
+
 	background-color: $orange;
 	display: flex;
 }
@@ -130,7 +131,7 @@ p {
 }
 .simple-steps {
 	padding-top: 20px;
-	width: 100vw;
+	width: 100%;
 	height: 70vh;
 	font-size: 24px;
 	display: flex;
@@ -173,9 +174,9 @@ p {
 	height: 100%;
 	width: 20%;
 	display: flex;
-	flex-direction:column;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	font-size:12px;
+	font-size: 12px;
 }
