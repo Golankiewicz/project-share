@@ -8,6 +8,7 @@ class Login extends Component {
                 <button>Zaloguj</button>
                 <button>Załóż konto</button>
                 {/*<Link to="/">Back to home</Link>*/}
+               
             </div>
         );
     }

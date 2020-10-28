@@ -53,6 +53,46 @@ body {
 	display: flex;
 	background: url(../assets/Background-Contact-Form.jpg) no-repeat center/cover;
 	filter: brightness(150%) opacity(30%);
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.form1 {
+	height: 40%;
+	width: 35%;
+	background-color: red;
+}
+.footer {
+	height: 50px;
+	width: 95vw;
+	display: flex;
+}
+.footer-article {
+	height: 100%;
+	width: 33.3%;
+	text-align: center;
+	line-height: 50px;
+}
+
+.footer-article:last-child {
+	height: 100%;
+	width: 33.3%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.facebook {
+	height: 25px;
+	width: 25px;
+	background: url(../assets/Facebook.svg) no-repeat center/cover;
+	margin: 20px 0;
+}
+.instagram {
+	height: 25px;
+	width: 25px;
+	background: url(../assets/Instagram.svg) no-repeat center/cover;
+	margin-left: 10px;
 }
 
 .home {

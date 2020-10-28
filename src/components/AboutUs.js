@@ -10,7 +10,6 @@ class AboutUs extends Component {
                     <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
                     <div class='wrapper'>
                     <div class='signature'></div>
-
                     </div>
                 </div>
                 <div class='about-us-people'></div>

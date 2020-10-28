@@ -23,6 +23,7 @@ class Home extends Component {
                <AboutUs/>
                <FooterContact/>
                 <Link to="/login">Go to login</Link>
+               
             </div>
         );
     }
