@@ -23,12 +23,19 @@ body {
 .login button {
 	font-size: 13px;
 	display: inline-block;
-	height: 19px;
+	height: 100%;
 	font-family: $font-base;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.login button:hover {
+	background-color: gray;
+	color: white;
 }
 
 .login button + button {
-	border: 0.75px solid #fad648;
+	border: 1px solid #fad648;
 }
 .menu {
 	display: flex;
@@ -45,22 +52,69 @@ body {
 .menu li {
 	padding: 10px 10px;
 	font-size: 16px;
+	cursor: pointer;
 }
+.footer-contact-left {
+	width: 65%;
+	height: 90%;
+	background: url(../assets/Background-Contact-Form.jpg) no-repeat left/cover;
+	filter: brightness(150%) opacity(30%);
+}
+
 .footer-contact {
 	margin-left: 0;
 	width: 95vw;
 	height: 100vh;
 	display: flex;
-	background: url(../assets/Background-Contact-Form.jpg) no-repeat center/cover;
-	filter: brightness(150%) opacity(30%);
+
 	align-items: center;
-	justify-content: flex-end;
+	justify-content: space-between;
 }
+
 
 .form1 {
 	height: 40%;
 	width: 35%;
-	background-color: red;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.form1 p {
+	font-size: 24px;
+	height: 15%;
+}
+.form1 .decoration {
+	margin: 0;
+}
+
+label {
+	font-size: 10px;
+	display: block;
+	margin:0;
+}
+input {
+	display: block;
+	width: 100%;
+}
+ textarea {
+	display: block;
+	width:100%;
+	
+	
+	
+}
+
+button{
+	display:block;
+	float: right;
+	padding:10px 20px;
+	font-family: $font-base;
+	cursor: pointer;
+}
+.label-center {
+	display: flex;
+	margin-top:20px;
 }
 .footer {
 	height: 50px;

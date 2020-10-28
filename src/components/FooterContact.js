@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 
+import Form from './Form'
+
 class FooterContact extends Component {
     render() {
         return (
             <>
             <div class='footer-contact'>
-                <div class='form1'></div>
+                <div class='footer-contact-left'></div>
+                <Form/>
             </div>
             <div class='footer'>
                 <div class='footer-article'></div>
