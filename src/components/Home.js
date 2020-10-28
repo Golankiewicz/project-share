@@ -22,7 +22,7 @@ class Home extends Component {
                <SimpleSteps/>
                <AboutUs/>
                <FooterContact/>
-                <Link to="/login">Go to login</Link>
+               {/* <Link to="/login">Go to login</Link>*/}
                
             </div>
         );

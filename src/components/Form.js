@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
 
 class Form extends Component {
+    state={
+        username:'',
+    }
+
+    handleChange = (e)=>{
+        const value = e.target.value;
+        this.setState({
+            username: value
+        })
+
+    }
     render() {
         return (
             <div class='form1'>
@@ -10,19 +21,19 @@ class Form extends Component {
                     <div class='label-center'>
                         <label htmlFor='user'>
                         Wpisz swoje imię
-                        <input type='text'/>
+                        <input type='text' id='user' name='username' value={this.state.username} onChange={this.handleChange}/>
 
                         </label>
-                        <label htmlFor='user'>
+                        <label htmlFor='mail'>
                         Wpisz swój email
-                        <input type='email'/>
+                        <input type='email' id='mail' email='useremail'/>
 
                         </label>
                     </div>
                     
                         <label htmlFor='user'>
                         Wpisz swoją wiadomość
-                        <textarea/>
+                        <textarea rows='8'/>
                         </label>
                         <button>Wyślij</button>
 
