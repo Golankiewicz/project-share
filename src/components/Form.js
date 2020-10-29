@@ -1,52 +1,58 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Form extends Component {
-    state={
-        username:'',
-    }
+	state = {
+		username: '',
+		email: '',
+		message: '',
+	};
 
-    handleChange = (e)=>{
-        const value = e.target.value;
-        this.setState({
-            username: value
-        })
+	handleChange = (e) => {
+		const { value, name } = e.target;
+		this.setState({
+			[name]: value,
+		});
+	};
+	render() {
+		return (
+			<div className='form1'>
+				<p>Skontaktuj się z nami</p>
+				<div className='decoration'></div>
+				<form>
+					<div className='label-center'>
+						<label htmlFor='user'>
+							Wpisz swoje imię
+							<input
+								type='text'
+								id='user'
+								name='username'
+								value={this.state.username}
+								onChange={this.handleChange}
+							/>
+						</label>
+						<label htmlFor='mail'>
+							Wpisz swój email
+							<input
+								type='email'
+								onChange={this.handleChange}
+								id='mail'
+								name='email'
+								email='useremail'
+							/>
+						</label>
+					</div>
 
-    }
-    render() {
-        return (
-            <div class='form1'>
-                <p>Skontaktuj się z nami</p>
-                <div class='decoration'></div>
-                <form>
-                    <div class='label-center'>
-                        <label htmlFor='user'>
-                        Wpisz swoje imię
-                        <input type='text' id='user' name='username' value={this.state.username} onChange={this.handleChange}/>
-
-                        </label>
-                        <label htmlFor='mail'>
-                        Wpisz swój email
-                        <input type='email' id='mail' email='useremail'/>
-
-                        </label>
-                    </div>
-                    
-                        <label htmlFor='user'>
-                        Wpisz swoją wiadomość
-                        <textarea rows='8'/>
-                        </label>
-                        <button>Wyślij</button>
-
-                        
-                        
-                    
-                    
-                </form>
-
-                
-            </div>
-        );
-    }
+					<label htmlFor='user'>
+						Wpisz swoją wiadomość
+						<textarea name='message' onChange={this.handleChange} rows='8' />
+					</label>
+					<button>Wyślij</button>
+				</form>
+				<Link to='/'>Go to home</Link>
+			</div>
+		);
+	}
 }
 
 export default Form;
