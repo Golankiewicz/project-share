@@ -14,7 +14,9 @@ class HomeHeader extends Component {
 							<Link className='link-to' to='/login'>
 								Zaloguj
 							</Link>{' '}
-							<button>Załóż konto</button>
+							<Link className='link-to' to='/register'>
+								Załóż konto
+							</Link>{' '}
 						</div>
 						<Menu />
 					</div>
