@@ -48,7 +48,7 @@ class Login extends Component {
 						<button>Zaloguj się</button>
 					</div>
 				</form>
-				<Link to='/'>Go to home</Link>
+				<Link to='/'>Wróć</Link>
 			</div>
 		);
 	}
