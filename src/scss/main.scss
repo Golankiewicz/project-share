@@ -11,12 +11,7 @@
 body {
 	font-family: $font-base;
 }
-/*
-#root {
-	display: flex;
-	justify-content: center;
-}
-*/
+
 .login {
 	width: 158px;
 	height: 36px;
@@ -25,16 +20,18 @@ body {
 	align-items: center;
 }
 
-.login button {
+.login button,
+.login .link-to {
+	background-color: #efefef;
 	font-size: 13px;
-	display: inline-block;
 	height: 100%;
 	font-family: $font-base;
 	padding: 5px;
-	cursor: pointer;
+	/*cursor: pointer;*/
 }
 
-.login button:hover {
+.login button:hover,
+.login .link-to:hover {
 	background-color: gray;
 	color: white;
 	border: 1px solid #fad648;
@@ -106,13 +103,6 @@ textarea {
 	width: 100%;
 }
 
-button {
-	display: block;
-	float: right;
-	padding: 10px 20px;
-	font-family: $font-base;
-	cursor: pointer;
-}
 .label-center {
 	display: flex;
 	margin-top: 20px;
@@ -316,4 +306,9 @@ p {
 	width: 200px;
 	background: url(../assets/Signature.svg) no-repeat center/contain;
 	margin: 30px 0;
+}
+
+.login-container {
+	display: flex;
+	justify-content: space-between;
 }

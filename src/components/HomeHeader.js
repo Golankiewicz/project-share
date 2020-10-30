@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import Menu from './Menu';
 
@@ -10,7 +11,9 @@ class HomeHeader extends Component {
 				<div className='right'>
 					<div className='top-menu'>
 						<div className='login'>
-							<button>Zaloguj</button>
+							<Link className='link-to' to='/login'>
+								Zaloguj
+							</Link>{' '}
 							<button>Załóż konto</button>
 						</div>
 						<Menu />
