@@ -59,7 +59,7 @@ class Register extends Component {
 						<button>Załóż konto</button>
 					</div>
 				</form>
-				<Link to='/'>Go to home</Link>
+				<Link to='/'>Wróć</Link>
 			</div>
 		);
 	}

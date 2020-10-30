@@ -49,7 +49,7 @@ class Form extends Component {
 					</label>
 					<button>Wyślij</button>
 				</form>
-				<Link to='/'>Go to home</Link>
+				<Link to='/'>Wróć</Link>
 			</div>
 		);
 	}
